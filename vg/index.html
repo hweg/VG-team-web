@@ -135,7 +135,8 @@
         <section id="reclutamiento">
           <h2>Únete a nuestro equipo</h2>
           <p>Si estás interesado en unirte a nuestro equipo, por favor llena el siguiente formulario:</p>
-          <form id="formulario-reclutamiento" action="submit-formulario-reclutamiento.php" method="POST">
+
+          <form id="formulario-reclutamiento" data-netlify="true" action="submit-formulario-reclutamiento.php" method="POST">
 
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -152,6 +153,8 @@
             <label for="nickname">Region:</label>
             <input type="text" id="Region" name="Region" required>
             
+            <div data-netlify-recaptcha="true"></div>
+
             <input type="submit" value="Enviar">
           </form>
         </section>
@@ -161,44 +164,7 @@
         <p>Derechos reservados &copy; 2023 Equipo de Esports VG - League of Legends</p>
       </footer>
 
-      <script>
-        // Selecciona el formulario y los campos de entrada
-const formulario = document.querySelector('#formulario-reclutamiento');
-const nombreInput = document.querySelector('#nombre');
-const edadInput = document.querySelector('#edad');
-const posicionInput = document.querySelector('#posicion');
-const nicknameInput = document.querySelector('#nickname');
-
-// Agrega un evento de envío al formulario
-formulario.addEventListener('submit', function(event) {
-  // Previene el comportamiento predeterminado del formulario
-  event.preventDefault();
   
-  // Valida los campos de entrada
-  if (nombreInput.value === '') {
-    alert('Por favor, ingresa tu nombre.');
-    return;
-  }
-  
-  if (edadInput.value < 18) {
-    alert('Debes tener al menos 18 años para unirte a nuestro equipo.');
-    return;
-  }
-  
-  if (posicionInput.value === '') {
-    alert('Por favor, ingresa tu posición dentro del juego.');
-    return;
-  }
-  
-  if (nicknameInput.value === '') {
-    alert('Por favor, ingresa tu nickname.');
-    return;
-  }
-  
-  // Si todos los campos son válidos, envía el formulario
-  formulario.submit();
-});
-      </script>
       
     </body>
     </html>      
