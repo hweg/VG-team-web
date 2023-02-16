@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equipo de Esports VG - League of Legends</title>
+    <style>
+      /* Definir paleta de colores morados */
+      :root {
+        --color-primario: #8640cc;
+        --color-secundario: #ebd6f3;
+        --color-fondo: #a131bd;
+        --color-texto: #000000;
+      }
+      
+      /* Estilos generales */
+      .logo {
+  display: block;
+  width: 100px;
+  height: auto;
+  float:inherit;
+  margin-right: 20px;
+}
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--color-fondo);
+        color: var(--color-texto);
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+        color: var(--color-texto);
+      }
+      
+      /* Estilos de sección */
+      section {
+        margin: 50px 0;
+        padding: 20px;
+        background-color: var(--color-secundario);
+        border: 1px solid var(--color-primario);
+        border-radius: 5px;
+      }
+      
+      section h2 {
+        font-size: 28px;
+      }
+      
+      section p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      /* Estilos de formulario */
+      form {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: var(--color-secundario);
+        border: 1px solid var(--color-primario);
+        border-radius: 5px;
+      }
+      
+      label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"], input[type="number"] {
+        font-size: 16px;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid var(--color-primario);
+        border-radius: 3px;
+      }
+      
+      input[type="submit"] {
+        background-color: var(--color-primario);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #9b75b8;
+      }
+      .nave li{
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <section>
+    <header>
+        <img src="VG2.png" alt="Logo de VG" class="logo">
+      <h1>Equipo de Esports VG - League of Legends</h1>
+    </header>
+</section>
+
+<section>
+    <nav>
+      <ul class="nave">
+        <li><a href="#acerca-de">Acerca de nosotros</a></li>
+        <li><a href="#jugadores">Nuestros jugadores</a></li>
+        <li><a href="#reclutamiento">Reclutamiento</a></li>
+    </ul>
+    </nav>
+</section>
+
+
+    <main>
+        <section id="acerca-de">
+          <h2>Acerca de nosotros</h2>
+          <p>Somos un equipo amateur de League of Legends enfocado en mejorar nuestras habilidades y competir en torneos locales. Fundado en el año 2020, hemos participado en varias competencias y esperamos seguir creciendo como equipo en el futuro.</p>
+        </section>
+        
+        <section id="jugadores">
+          <h2>Nuestros jugadores</h2>
+          <p>Actualmente contamos con los siguientes jugadores:</p>
+          <ul>
+            <li>VACANTE DISPONIBLE (SUPLENTE)</li>
+            <li>VACANTE DISPONIBLE (TOP)</li>
+            <li>Julio "hweg" Rubio (JG)</li>
+            <li>Jose "NECROMANCER" Araiza (MID)</li>
+            <li>Josue "skidoo" Gonzales (ADC)</li>
+            <li>Carlos "CharlyV" Valadez (SUPP)</li>
+            
+          </ul>
+        </section>
+        
+        <section id="reclutamiento">
+          <h2>Únete a nuestro equipo</h2>
+          <p>Si estás interesado en unirte a nuestro equipo, por favor llena el siguiente formulario:</p>
+          <form action="submit-formulario-reclutamiento.php" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" required>
+            
+            <label for="posicion">Posición dentro del juego:</label>
+            <input type="text" id="posicion" name="posicion" required>
+            
+            <label for="nickname">Nombre de invocador:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="nickname">Region:</label>
+            <input type="text" id="Region" name="Region" required>
+            
+            <input type="submit" value="Enviar">
+          </form>
+        </section>
+      </main>
+      
+      <footer>
+        <p>Derechos reservados &copy; 2023 Equipo de Esports VG - League of Legends</p>
+      </footer>
+    </body>
+    </html>      
