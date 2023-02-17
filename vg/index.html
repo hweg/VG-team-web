@@ -11,14 +11,16 @@
         --color-texto: #000000;
       }
       
+      
       /* Estilos generales */
       .logo {
   display: block;
-  width: 100px;
+  width: 200px;
   height: auto;
   float:inherit;
   margin-right: 20px;
 }
+
       body {
         font-family: Arial, sans-serif;
         background-color: var(--color-fondo);
@@ -62,7 +64,79 @@
         font-size: 16px;
         margin-bottom: 10px;
       }
-      
+      .servicio .iconos{
+    
+    margin: 20px;    
+    height: 14rem;
+    width: 14rem;
+    background-color: var(--color-fondo);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedor-fundador {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconos {
+  height: 14rem;
+  width: 14rem;
+  background-color: var(--color-fondo);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.descripcion-fundador {
+  float: left;
+  margin-left: 20px;
+}
+
+.descripcion-fundador h3 {
+  margin-top: 0;
+}
+
+.descripcion-fundador p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+
+.usuario{
+  height: 14rem;
+  margin: 100px;
+    width: 14rem;
+
+}
+
+.selectorR{
+
+  height: 20px;
+  width: 60px;
+
+}
+
+.labelR{
+
+  width: 200px;
+}
+
+.selectorP{
+  height: 20px;
+  width: 60px;
+}
+
+.selectorREG{
+  height: 20px;
+  width: 60px;
+
+}
+
+
       input[type="text"], input[type="number"] {
         font-size: 16px;
         padding: 5px;
@@ -85,38 +159,108 @@
       input[type="submit"]:hover {
         background-color: #9b75b8;
       }
+
       .nave li{
+        text-decoration: none;
         font-size: 25px;
         color: #000000;
         font-weight: bold;
       }
+
+      
     </style>
   </head>
   
   <body>
-    <section>
+    <section id="principal">
     <header>
+
         <img src="vgpng.png" alt="Logo de VG" class="logo">
       <h1>Equipo de Esports VG - League of Legends</h1>
     </header>
 </section>
 
-<section>
-    <nav>
-      <ul class="nave">
-        <li><a href="#acerca-de">Acerca de nosotros</a></li>
-        <li><a href="#jugadores">Nuestros jugadores</a></li>
-        <li><a href="#reclutamiento">Reclutamiento</a></li>
-    </ul>
+<section >
+  <div style="flex-direction: row; display:flex ; justify-content: space-evenly; margin: 0; text-decoration: none;" class="nav-bg">
+    <nav  class="navegacion-principal contenedor">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+        <a href="#">Ubicacion</a>
     </nav>
+</div>
 </section>
 
 
     <main>
         <section id="acerca-de">
           <h2>Acerca de nosotros</h2>
-          <p>Somos un equipo amateur de League of Legends enfocado en mejorar nuestras habilidades y competir en torneos locales. Fundado en el año 2020, hemos participado en varias competencias y esperamos seguir creciendo como equipo en el futuro.</p>
+          <p>Coincidimos en nuestra pasión por el competitivo de League of Legends, lo que nos llevó a formar un equipo en el año 2020. Éramos un grupo de cinco amigos en la universidad, todos cursando ingeniería en computación, y decidimos juntarnos para mejorar nuestras habilidades y competir en torneos locales. Desde entonces, hemos participado en varias competencias y estamos emocionados por seguir creciendo como equipo en el futuro.</p>
+          <a href="#principal">menu principal</a>
         </section>
+
+        <section id="fundadores" class="servicio">
+          <h2>Fundadores de VG</h2>
+          
+          <div class="contenedor-fundador">
+            <div class="iconos">
+              <img class="usuario" src="usuario.png" alt="">
+            </div>
+            <div class="descripcion-fundador">
+              <h3>Julio Rubio</h3>
+              <p>Descripción breve de Julio Rubio.</p>
+            </div>
+          </div>
+        
+          <div class="contenedor-fundador">
+            <div class="iconos">
+              <img class="usuario" src="usuario.png" alt="">
+            </div>
+            <div class="descripcion-fundador">
+              <h3>Josue Flores</h3>
+              <p>Descripción breve de Josue Flores.</p>
+            </div>
+          </div>
+
+          <div class="contenedor-fundador">
+            <div class="iconos">
+              <img class="usuario" src="usuario.png" alt="">
+            </div>
+            <div class="descripcion-fundador">
+              <h3>Jose Araiza</h3>
+              <p>Descripción breve de Jose Araiza.</p>
+            </div>
+          </div>
+
+          <div class="contenedor-fundador">
+            <div class="iconos">
+              <img class="usuario" src="usuario.png" alt="">
+            </div>
+            <div class="descripcion-fundador">
+              <h3>Carlos Valadez</h3>
+              <p>Descripción breve de Carlos Valadez.</p>
+            </div>
+          </div>
+        
+          <div class="contenedor-fundador">
+            <div class="iconos">
+              <img class="usuario" src="usuario.png" alt="">
+            </div>
+            <div class="descripcion-fundador">
+              <h3>Raul Flores</h3>
+              <p>Descripción breve de Raul Flores.</p>
+            </div>
+          </div>
+          <!-- Agregar más contenedores de fundadores según sea necesario -->
+        
+      
+        
+        <a href="#principal">menu principal</a>
+      </section>
+
+
+      
         
         <section id="jugadores">
           <h2>Nuestros jugadores</h2>
@@ -130,37 +274,76 @@
             <li>Carlos "CharlyV" Valadez (SUPP)</li>
             
           </ul>
+          <a href="#principal">menu principal</a>
         </section>
         
         <section id="reclutamiento">
           <h2>Únete a nuestro equipo</h2>
-          <p>Si estás interesado en unirte a nuestro equipo, por favor llena el siguiente formulario:</p>
+          <p>Si estás interesado en unirte a nuestro equipo, por favor llena el siguiente formulario y alguno de los fundadores te contactara por discord:</p>
 
           <form id="formulario-reclutamiento" data-netlify="true" action="submit-formulario-reclutamiento.php" method="POST">
 
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nickname">Nombre de invocador:</label>
+            <input type="text" id="nickname" name="nickname" required>
             
+            <label for="discord">Username de discord:</label>
+            <input type="text" id="discord" name="discord" required>
+
             <label for="edad">Edad:</label>
             <input type="number" id="edad" name="edad" min="18" required>
             
             <label for="posicion">Posición dentro del juego:</label>
-            <input type="text" id="posicion" name="posicion" required>
+            <label class="labelP">
+              <select class="selectorP" name="role[]" >
+                <option value="top">TOP</option>
+                <option value="jg">JG</option>
+                <option value="mid">MID</option>
+                <option value="adc">ADC</option>
+                <option value="supp">SUPP</option>
+               
+              </select></label>
+          
             
-            <label for="nickname">Nombre de invocador:</label>
-            <input type="text" id="nickname" name="nickname" required>
+            <label for="region">Region:</label>
+            <label class="labelREG">
+              <select class="selectorREG" name="role[]" >
+                <option value="lan">LAN</option>
+                <option value="las">LAS</option>
+               
+               
+              </select></label>
+            
 
-            <label for="nickname">Region:</label>
-            <input type="text" id="Region" name="Region" required>
-            
+            <label class="labelR">Tu Rango en clasificatoria:
+                <select class="selectorR" name="role[]" >
+                  <option value="hierro">Hierro</option>
+                  <option value="bonce">Bronce</option>
+                  <option value="plata">Plata</option>
+                  <option value="oro">Oro</option>
+                  <option value="platino">Platino</option>
+                  <option value="diamante">Diamante</option>
+                  <option value="maestro">Maestro</option>
+                  <option value="granM">Gran Maestro</option>
+                  <option value="retador">Retador</option>
+
+                </select></label>
+
+          
+             
+
+
             <div data-netlify-recaptcha="true"></div>
 
             <input type="submit" value="Enviar">
           </form>
+          <a href="#principal">menu principal</a>
         </section>
       </main>
       
-      <footer>
+      <footer style="color: aliceblue;">
         <p>Derechos reservados &copy; 2023 Equipo de Esports VG - League of Legends</p>
       </footer>
 
